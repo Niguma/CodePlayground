@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+
+ <script>
+    //---d4---//
+
+    function rollD4(){
+        //var d4Result = d4;
+        var d4 =  Math.floor(Math.random()*4+1);
+        resultArea.innerHTML = d4;
+             console.log(d4);
+    }
+
+
+   
+ /*  
+             ///////////////////////////////////////////////
+   
+   function rollD4() {
+var d4Result = document.getElementById("d4Result");
+var d4 = Math.floor(Math.random()*4+1);
+  d4Result.innerHTML = d4;
+};
+*/
+    
+    
+    
+    </script>
+//////////////////////////////
+    <!--script ends-->
+
+    <!--style begins-->
+/////////////////////////////
+    <style>
+    * {padding: 0px; margin: 0px;}
+
+    .device {
+        width: 400px;
+        height: 400px;
+        border: solid black 1px;
+    }
+    </style>
+
+</head>
+<title>
+    Thats my dice-machine.
+</title>
+
+<Body>
+        <div class="device">
+    <!--        <form action="PHP_Dice-Machine.php">
+                <p> 
+                    Number of dice: <input type="text" name="numberOfDice" placeholder="How many dices do you want to roll?" id="nD"><br>
+                    Type of dice: <input type="text" name="typeOfDice" placeholder="D4, D6, D10, D100?" id="tD"><br>
+                    Result: <p id="printResult"></p>
+                </p>
+                <input type="submit">
+            </form>
+    -->
+            <h3>D4 Roll</h3>
+            <button onclick="rollD4()"> Roll! </button>
+            <p id="resultArea">Number: </p>
+            
+        </div>
+        
+
+
+
+   
+</Body>
+
