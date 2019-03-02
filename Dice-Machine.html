@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <head>
+    <title>Dice Machine</title>
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+</head>
 
  <script>
-    //---d4---//
-
+    //---D4---//
     function rollD4(){
-        //var d4Result = d4;
         var d4 =  Math.floor(Math.random()*4+1);
-        resultArea.innerHTML = d4;
-             console.log(d4);
+            resultArea.innerHTML = d4;
+                console.log("D4roll result is:" + d4);
+    }
+
+    //--D6--//
+    function rollD6(){
+        var d6 = Math.floor(Math.random()*6+1);
+            resultArea.innerHTML = d6;
+             console.log("D6roll result is:" + d6);
+    }
+
+    //--D8--//
+    function rollD8(){
+        var d8 = Math.floor(Math.random()*8+1)
+            resultArea.innerHTML = d8;
+                console.log("D8roll result is:" + d8);
     }
 
 
-   
  /*  
-             ///////////////////////////////////////////////
    
    function rollD4() {
 var d4Result = document.getElementById("d4Result");
@@ -26,11 +39,9 @@ var d4 = Math.floor(Math.random()*4+1);
     
     
     </script>
-//////////////////////////////
     <!--script ends-->
 
     <!--style begins-->
-/////////////////////////////
     <style>
     * {padding: 0px; margin: 0px;}
 
@@ -58,8 +69,10 @@ var d4 = Math.floor(Math.random()*4+1);
             </form>
     -->
             <h3>D4 Roll</h3>
-            <button onclick="rollD4()"> Roll! </button>
-            <p id="resultArea">Number: </p>
+            <button onclick="rollD4()">D4</button>
+            <button onclick="rollD6()">D6</button>
+            <button onclick="rollD8()">D8</button>
+            <p>Number: <div id="resultArea"></div> </p>
             
         </div>
         
